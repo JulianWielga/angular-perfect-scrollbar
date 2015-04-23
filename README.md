@@ -11,41 +11,33 @@ Installation
 Install via Bower:
 
 ````
-$ bower install angular-perfect-scrollbar --save
+$ bower install ng-perfect-scrollbar --save
 ```
 
 Include the angular-perfect-scrollbar files in your index.html:
 
 ````
-<link rel="stylesheet" href="bower_components/perfect-scrollbar/min/perfect-scrollbar.min.css" />
-<script src="bower_components/perfect-scrollbar/min/perfect-scrollbar.min.js"></script>
-<script src="bower_components/perfect-scrollbar/min/perfect-scrollbar.with-mousewheel.min.js"></script>
-<script src="bower_components/angular-perfect-scrollbar/src/angular-perfect-scrollbar.js"></script>
+<link href="bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
+<script src="bower_components/perfect-scrollbar/js/min/perfect-scrollbar.min.js"></script>
+<script src="bower_components/ng-perfect-scrollbar/dist/angular-perfect-scrollbar.js"></script>
 ```
-
-Include some css for your scrollable content:
-
-````
-.scroller {
-    white-space: pre-line;
-    height: 500px;
-    overflow-y: hidden;
-    position: relative;
-}
-````
 
 Add it as module to your app.js:
 
 ````
-['perfect_scrollbar']
+['angular-perfect-scrollbar']
 ````
 
 Use it wherever you want:
 
 ````
-<perfect-scrollbar class="scroller" wheel-propagation="true" wheel-speed="10" min-scrollbar-length="20">
+<perfect-scrollbar wheel-propagation="true" ...>
   // your content
 </perfect-scrollbar>
+
+<div perfect-scrollbar wheel-propagation="true" ...>
+  // your content
+</div>
 ````
 
 Further installation and usage hints can be found here:
