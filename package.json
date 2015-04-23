@@ -1,6 +1,6 @@
 {
   "name": "ng-perfect-scrollbar",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "private": false,
   "scripts": {
     "test": "gulp test"
