@@ -39,5 +39,5 @@ angular.module 'angular-perfect-scrollbar', []
 			element.on 'mouseenter', update
 			scope.$on '$updatePrefectScrollbar', update
 
-			scope.$on '$destroy', -> Ps.destroy element
+			scope.$on '$destroy', -> Ps.destroy element[0]
 ]

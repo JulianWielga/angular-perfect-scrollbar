@@ -31,7 +31,7 @@ angular.module('angular-perfect-scrollbar', []).directive('perfectScrollbar', [
         element.on('mouseenter', update);
         scope.$on('$updatePrefectScrollbar', update);
         return scope.$on('$destroy', function() {
-          return Ps.destroy(element);
+          return Ps.destroy(element[0]);
         });
       }
     };
